@@ -6,6 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>YouTube sample page</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
 </head>
 <body>
    <header class="header">          
@@ -34,17 +37,23 @@
        </div>
    </header>
    <div class="content">
-   <main >
+   <main class="main-content">
    <section class="video-section">
       <div class="video-player">
-         <iframe width="560" height="315" 
+         <iframe id="videoframe"
          src="https://www.youtube-nocookie.com/embed/-FmWuCgJmxo" 
          title="YouTube video player" frameborder="0" 
          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
          allowfullscreen></iframe>
       </div>
       <div class="videoinfo">
-         <h1>VENOM: LET THERE BE CARNAGE - Official Trailer 2 (HD)</h1>
+         <p id="videotag">#trailer #OfficialTraler #Sony</p> 
+         <h1 id="videotitle">VENOM: LET THERE BE CARNAGE - Official Trailer 2 (HD)</h1>
+         <span> <strong>28,224,043 views • Aug 2, 2021 •</strong> 
+         You are what you eat. Feast on the new trailer for #Venom:</span>
+         <p>Let There Be Carnage, exclusively in movie theaters this fall.</p>
+         <p>Visit our site: <br>
+           <a href="https://www.venom.movie">https://www.venom.movie</a> </p>
 
       </div>
 

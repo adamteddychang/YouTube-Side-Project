@@ -1,3 +1,7 @@
+
+html{
+    font-family: 'Roboto', sans-serif;
+}
 .header{
     display: flex;
     justify-content: space-between;
@@ -25,7 +29,7 @@
  width: 100%;  
  font-size: inherit;
  padding: .4em;
- border: 1px solid #777;
+ border: 1px solid #cccccc;
  border-top-right-radius: 0;
  border-top-left-radius: 0;
  color: #777;
@@ -34,7 +38,7 @@
     display: flex;
     align-items: center;
     padding: 0 1.25rem;
-    border: 1px solid#777;
+    border: 1px solid#cccccc;
     border-left: none;
     background-color: #f8f8f8;
     border-top-left-radius: 0;
@@ -50,18 +54,47 @@
     align-items: center;
     gap: 1.5rem;
 }
-.content {
-    display: grid;
-    grid-template: auto 1fr / 2fr 1fr;
-    padding: 8rem;
-  }
-.video-section{
-    display: flex;
-    justify-content: center;
-    height: 50rem;
-    width: auto;
+.content{
+    background-color: rgba(249, 249, 249,1);
 }
+.video-section {
+    display: flex;
+    border-bottom: 1px solid rgba(170, 170, 170, 0.2);
+    flex-direction: column;
+    
+  }
 .video-player{
-    height: 720px;
-    width: 1280px;
+    display: flex;
+    align-self: flex-start;
+    margin-left: 5rem;
+    margin-top: 2rem;
+    text-align: center;
+   
+}
+#videoframe{
+    height: 45rem;
+    width: 80rem;
+    margin-left: 5rem;
+}
+@media screen and (max-width: 900px) {
+    #videoframe{
+        height: 30rem;
+        width: 53rem;
+    }
+    
+}
+
+.videoinfo{
+    display: grid;
+    margin-left: 10rem;
+
+    
+}
+#videotag{
+    color: #065fd4;
+    font-style: Roboto, arial, sans-serif;
+    margin-bottom: 0px;
+}
+#videotitle{
+    margin-top: 0px;
 }
